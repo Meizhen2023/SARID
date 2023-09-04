@@ -2,7 +2,7 @@
 
 # UPdate on 04/09/2023. SARID V.1. 
 It can be downloaded from (Google Drive will be available in one month ):
- - [BaiduYun Drive(code: ugpp)](https://pan.baidu.com/s/1WbC-rP8gs54OuwnHzb71bg)
+ - [BaiduYun Drive](https://pan.baidu.com/s/1WbC-rP8gs54OuwnHzb71bg)
 
 #### train\test split
 The split file is available under 'split/' folder.
