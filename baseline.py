@@ -36,45 +36,6 @@ train_loader = DataLoader(train_dataset, shuffle=True, batch_size=batch_size,
  collate_fn=USRADataset_collate)
 test_loader = DataLoader(val_dataset, shuffle=False, batch_size=batch_size,
  collate_fn=USRADataset_collate)
-
-# Convolutional neural network (two convolutional layers)
-    def __init__(self):
-        super(ConvNet, self).__init__()
-        self.layer1 = nn.Sequential(
-            # (28-5+2*2)//1+1 = 28
-            nn.Conv2d(1, 16, kernel_size=5, stride=1, padding=2),
-            nn.BatchNorm2d(16),
-            nn.ReLU(),
-            # (28-(2-1)-1)//2+1 = 14
-            nn.MaxPool2d(kernel_size=2, stride=2))
-        self.layer2 = nn.Sequential(
-            # (14-3+2*1)//1+1 = 14
-            nn.Conv2d(16, 32, kernel_size=3, stride=1, padding=1),
-            nn.BatchNorm2d(32),
-            nn.ReLU(),
-            # (14-(2-1)-1)//2+1 = 7
-            nn.MaxPool2d(kernel_size=2, stride=2))
-        self.layer3 = nn.Sequential(
-            # (7-3+2*1)//1+1 = 7
-            nn.Conv2d(32, 64, kernel_size=3, stride=1, padding=1),
-            nn.BatchNorm2d(64),
-            nn.ReLU(),
-            # (7-(2-1)-1)//2+1 = 3
-            nn.MaxPool2d(kernel_size=2, stride=2))
-        self.layer4 = nn.Sequential(
-            nn.AdaptiveAvgPool2d(1))
-        self.fc1 = nn.Linear(64, 128)
-        self.fc3 = nn.Linear(64, 1)
-
-    def forward(self, x):
-        out = self.layer1(x)
-        out = self.layer2(out)
-        out = self.layer3(out)
-        out = self.layer4(out)
-        out = out.reshape(out.size(0), -1)
-        # out = self.fc1(out)
-        rainfall_intensity = self.fc3(out)
-        return rainfall_intensity
 class CNN(nn.Module):
     def __init__(self):
         super(CNN, self).__init__()
@@ -140,7 +101,6 @@ class Transformer(nn.Module):
 
 
 model = Transformer().to(device)
-# model.load_state_dict(torch.load('model_epoch_best_R_0.729.ckpt'), strict=False)
 # -------------------------------------------------------------------#
 #   Determine the current batch_size and adaptively adjust the learning rate
 # -------------------------------------------------------------------#
@@ -206,11 +166,7 @@ for epoch in range(num_epochs):
     model.load_state_dict(torch.load('model_epoch_R.ckpt'))
     model.eval()
 
-    # acoustic_feaure = val_dataset.feature.reshape(val_dataset.feature.shape[0],1025, 173).transpose(0, 2, 1)
-    # acoustic_feaure = val_dataset.feature.transpose(0, 2, 1)
     acoustic_feaure = val_dataset.feature.transpose(0, 2, 1)
-    # acoustic_feaure = val_dataset.feature.reshape(val_dataset.feature.shape[0],1, 128, 173)
-    # acoustic_feaure = val_dataset.feature
     outputs = []
     step = 16
     with torch.no_grad():
@@ -227,10 +183,6 @@ for epoch in range(num_epochs):
                 outputs = torch.cat((outputs, rainfall_intensity))
     outputs = np.array(outputs.squeeze().cpu(),dtype=float)
     labels = val_dataset.label['RAINFALL INTENSITY'].to_numpy()
-    # labels = val_dataset.label.to_numpy()
-    # filter_array = labels<5
-    # labels = labels[filter_array]
-    # outputs = outputs[filter_array]
     MSE = mean_squared_error(labels, outputs)
     RMSE = np.sqrt(mean_squared_error(labels, outputs))
     MAE = mean_absolute_error(labels, outputs)
