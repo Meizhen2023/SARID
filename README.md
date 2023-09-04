@@ -26,7 +26,7 @@ The split file is available under 'split/' folder.
 | Transformer | STFT | 0.711 | 1.199 | 1.095 | 0.636 |
 
 
-|             | Network |   Acoustic Feature  |   MAE  |  MSE |   RMSE  | R2 |  Tilt | Challenge |
+|             | Network |   Acoustic Feature  |   MAE  |  MSE |   RMSE  | R2 |
 |---|---|---|---|---|---|---|---|---|
 | Faster-RCNN |  11 | 84.98 | 66.73 | 81.59 | 76.45 |  94.42 | 88.19 |   89.82   |
 |    SSD300   |  25 | 86.99 | 72.90 | 87.06 | 74.84 |  96.53 | 91.86 |   90.06   |
