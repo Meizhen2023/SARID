@@ -15,15 +15,15 @@ The split file is available under 'split/' folder.
 
 |   Network   | Acoustic Feature |   MAE  |  MSE |   RMSE  | R2 |
 |---|---|---|---|---|---|
-|     CNN     |  MFCC  | 0.646 | 1.008 | 1.004 | 0.694 |
-|     LSTM    | MFCC | 0.713 | 1.197 | 1.094 | 0.637 |
-| Transformer | MFCC | 0.563 | 0.775 | 0.88 | 0.765 |
-|     CNN     |  Mel | 0.85 | 1.666 | 1.291 | 0.494 |
-|     LSTM    |  Mel | 0.796 | 1.484 | 1.218 | 0.55 |
-| Transformer | Mel | 0.856 | 1.495 | 1.223 | 0.546 |
-|     CNN     | STFT | 0.856 | 1.495 | 1.223 | 0.546 |
-|     LSTM    | STFT | 0.816 | 1.353 | 1.163 | 0.589 |
-| Transformer | STFT | 0.711 | 1.199 | 1.095 | 0.636 |
+|     CNN     |       MFCC       | 0.646 | 1.008 | 1.004 | 0.694 |
+|     LSTM    |       MFCC       | 0.713 | 1.197 | 1.094 | 0.637 |
+| Transformer |       MFCC       | 0.563 | 0.775 | 0.88  | 0.765 |
+|     CNN     |        Mel       | 0.85  | 1.666 | 1.291 | 0.494 |
+|     LSTM    |        Mel       | 0.796 | 1.484 | 1.218 | 0.55  |
+| Transformer |        Mel       | 0.856 | 1.495 | 1.223 | 0.546 |
+|     CNN     |       STFT       | 0.856 | 1.495 | 1.223 | 0.546 |
+|     LSTM    |       STFT       | 0.816 | 1.353 | 1.163 | 0.589 |
+| Transformer |       STFT       | 0.711 | 1.199 | 1.095 | 0.636 |
 
 
 This repository is designed to provide an open-source dataset for surveillance audio-based rainfall estimation, described in _《Towards Rainfall Intensity Estimation using Surveillance Audio: A Dataset and Baseline》_. This dataset is open-source under MIT license. More details about this dataset are avialable at our paper _《Towards Rainfall Intensity Estimation using Surveillance Audio: A Dataset and Baseline》_. If you are benefited from this paper, please cite our paper as follows:
