@@ -26,6 +26,13 @@ The split file is available under 'split/' folder.
 | Transformer | STFT | 0.711 | 1.199 | 1.095 | 0.636 |
 
 
+|             | Network |   Acoustic Feature  |   MAE  |  MSE |   RMSE  | R2 |  Tilt | Challenge |
+|---|---|---|---|---|---|---|---|---|
+| Faster-RCNN |  11 | 84.98 | 66.73 | 81.59 | 76.45 |  94.42 | 88.19 |   89.82   |
+|    SSD300   |  25 | 86.99 | 72.90 | 87.06 | 74.84 |  96.53 | 91.86 |   90.06   |
+|    SSD512   |  12 | 87.83 | 69.99 | 84.23 | 80.65 |  96.50 | 91.26 |   92.14   |
+|  YOLOv3-320 |  52 | 87.23 | 71.34 | 82.19 | 82.44 |  96.69 | 89.17 |   91.46   |
+
 This repository is designed to provide an open-source dataset for surveillance audio-based rainfall estimation, described in _《Towards Rainfall Intensity Estimation using Surveillance Audio: A Dataset and Baseline》_. This dataset is open-source under MIT license. More details about this dataset are avialable at our paper _《Towards Rainfall Intensity Estimation using Surveillance Audio: A Dataset and Baseline》_. If you are benefited from this paper, please cite our paper as follows:
 
 ```
