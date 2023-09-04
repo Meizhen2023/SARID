@@ -48,7 +48,7 @@ Demo code and several images are provided, after you obtain "model_epoch_best_R.
 
 Input parameters are well commented in python codes(python2/3 are both ok, the version of pytorch should be >= 0.3). You can increase the batchSize as long as enough GPU memory is available.
 
-#### Environment (not so important as long as you can run the code): 
+#### Note that the environment is not so important as long as you can run the code. 
 
 ## Dataset Annotations
 
