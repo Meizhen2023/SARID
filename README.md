@@ -29,7 +29,7 @@ The split file is available under 'split/' folder.
 This repository is designed to provide an open-source dataset for surveillance audio-based rainfall estimation, described in _《Towards Rainfall Intensity Estimation using Surveillance Audio: A Dataset and Baseline》_. This dataset is open-source under MIT license. More details about this dataset are avialable at our paper _《Towards Rainfall Intensity Estimation using Surveillance Audio: A Dataset and Baseline》_. If you are benefited from this paper, please cite our paper as follows:
 
 ```
-@inproceedings{xu2018towards,
+@{
   title={Towards Rainfall Intensity Estimation using Surveillance Audio: A Dataset and Baseline},
   author={Meizhen WANG, Mingzheng CHEN, Ziran WANG, Yuxuan GUO, Xuejun LIU*},
   booktitle={**},
