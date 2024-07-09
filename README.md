@@ -1,7 +1,7 @@
 # SARID (Surveillance-Audio-Rainfall-Intensity-Dataset)
 
 # UPdate on 04/09/2023. SARID V.1. 
-It can be downloaded from (Google Drive will be available in one month ):
+It can be downloaded from :
  - [BaiduYun Drive](https://pan.baidu.com/s/1WbC-rP8gs54OuwnHzb71bg)
 
 #### train\test split
@@ -70,7 +70,9 @@ A sample image name is "2022-09-15 17-56-00_0.19_22.335_92.35_2.491_0.892_hiv000
 
 If you have any problems about SARID, please contact chenmingzheng64@gmail.com.
 
-Please cite the paper _《Towards Rainfall Intensity Estimation using Surveillance Audio: A Dataset and Baseline》_, if you benefit from this dataset.
+Please cite the paper _《Meizhen Wang, Mingzheng Chen, Ziran Wang, Yuxuan Guo, Yong Wu, Wei Zhao, Xuejun Liu,
+Estimating Rainfall Intensity Based on Surveillance Audio and Deep-Learning,
+Environmental Science and Ecotechnology》_, if you benefit from this dataset.
 
 
 
