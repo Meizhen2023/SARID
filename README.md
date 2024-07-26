@@ -2,7 +2,7 @@
 
 # UPdate on 04/09/2023. SARID V.1. 
 It can be downloaded from :
- - [BaiduYun Drive](https://pan.baidu.com/s/1WbC-rP8gs54OuwnHzb71bg)
+ - [BaiduYun Drive](https://pan.baidu.com/s/1-QcS7Y0O4AroSfikph5-Kg code: mzyx)
 
 #### train\test split
 The split file is available under 'split/' folder.
@@ -26,7 +26,7 @@ The split file is available under 'split/' folder.
 | Transformer |       STFT       | 0.711 | 1.199 | 1.095 | 0.636 |
 
 
-This repository is designed to provide an open-source dataset for surveillance audio-based rainfall estimation, described in _《Towards Rainfall Intensity Estimation using Surveillance Audio: A Dataset and Baseline》_. This dataset is open-source under MIT license. More details about this dataset are avialable at our paper _《Towards Rainfall Intensity Estimation using Surveillance Audio: A Dataset and Baseline》_. If you are benefited from this paper, please cite our paper as follows:
+This repository is designed to provide an open-source dataset for surveillance audio-based rainfall estimation, described in _《Towards Rainfall Intensity Estimation using Surveillance Audio: A Dataset and Baseline》_. This dataset is open-source under MIT license. More details about this dataset are available in our paper _《Towards Rainfall Intensity Estimation using Surveillance Audio: A Dataset and Baseline》_. If you are benefited from this paper, please cite our paper as follows:
 
 ```
 @{
@@ -52,7 +52,7 @@ Input parameters are well commented in python codes(python2/3 are both ok, the v
 
 ## Dataset Annotations
 
-Annotations are embedded in file name.
+Annotations are embedded in the file name.
 
 A sample image name is "2022-09-15 17-56-00_0.19_22.335_92.35_2.491_0.892_hiv00013_60_road(concrete).mp3.". Each name can be splited into several fields. Those fields are explained as follows.
 
@@ -68,11 +68,20 @@ A sample image name is "2022-09-15 17-56-00_0.19_22.335_92.35_2.491_0.892_hiv000
 
 ## Acknowledgement
 
-If you have any problems about SARID, please contact chenmingzheng64@gmail.com.
+If you have any problems with SARID, please contact chenmingzheng64@gmail.com.
 
-Please cite the paper _《Meizhen Wang, Mingzheng Chen, Ziran Wang, Yuxuan Guo, Yong Wu, Wei Zhao, Xuejun Liu,
-Estimating Rainfall Intensity Based on Surveillance Audio and Deep-Learning,
-Environmental Science and Ecotechnology》_, if you benefit from this dataset.
+Please cite the paper _ Meizhen Wang, Mingzheng Chen, Ziran Wang, Yuxuan Guo, Yong Wu, Wei Zhao, Xuejun Liu,
+Estimating rainfall intensity based on surveillance audio and deep-learning,
+Environmental Science and Ecotechnology,
+Volume 22,
+2024,
+100450,
+ISSN 2666-4984,
+https://doi.org/10.1016/j.ese.2024.100450.
+(https://www.sciencedirect.com/science/article/pii/S2666498424000644)
+Abstract: Rainfall data with high spatial and temporal resolutions are essential for urban hydrological modeling. Ubiquitous surveillance cameras can continuously record rainfall events through video and audio, so they have been recognized as potential rain gauges to supplement professional rainfall observation networks. Since video-based rainfall estimation methods can be affected by variable backgrounds and lighting conditions, audio-based approaches could be a supplement without suffering from these conditions. However, most audio-based approaches focus on rainfall-level classification rather than rainfall intensity estimation. Here, we introduce a dataset named Surveillance Audio Rainfall Intensity Dataset (SARID) and a deep learning model for estimating rainfall intensity. First, we created the dataset through audio of six real-world rainfall events. This dataset's audio recordings are segmented into 12,066 pieces and annotated with rainfall intensity and environmental information, such as underlying surfaces, temperature, humidity, and wind. Then, we developed a deep learning-based baseline using Mel-Frequency Cepstral Coefficients (MFCC) and Transformer architecture to estimate rainfall intensity from surveillance audio. Validated from ground truth data, our baseline achieves a root mean absolute error of 0.88 mm h-1 and a coefficient of correlation of 0.765. Our findings demonstrate the potential of surveillance audio-based models as practical and effective tools for rainfall observation systems, initiating a new chapter in rainfall intensity estimation. It offers a novel data source for high-resolution hydrological sensing and contributes to the broader landscape of urban sensing, emergency response, and resilience.
+Keywords: Surveillance audio; Rainfall intensity; Dataset; Regression; Deep learning
+_, if you benefit from this dataset.
 
 
 
