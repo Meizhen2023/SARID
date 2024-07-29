@@ -1,8 +1,9 @@
 # SARID (Surveillance-Audio-Rainfall-Intensity-Dataset)
 
 # UPdate on 04/09/2023. SARID V.1. 
-It can be downloaded from :
+It can be downloaded from (The corresponding video files can only be downloaded from BaiduYun Drive) :
  - [BaiduYun Drive](https://pan.baidu.com/s/1-QcS7Y0O4AroSfikph5-Kg code: mzyx)
+ - [Google Drive](https://drive.google.com/drive/folders/1jH2uO8Xk7RgrcbtkDpTxM3BCo-4tQMY5?usp=drive_link)
 
 #### train\test split
 The split file is available under 'split/' folder.
