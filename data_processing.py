@@ -573,12 +573,12 @@ if __name__ == '__main__':
     '''
     # generate dataset
     '''
-    # meteorological_path = r'D:\CMZ\数据\Meteorological Data\convert_csv'
-    # metadata_path = r'D:\CMZ\数据\file_name_time.csv'
+    # meteorological_path = r'convert_csv'
+    # metadata_path = r'file_name_time.csv'
     # meteorological_paths = glob.glob(os.path.join(meteorological_path,'*.csv'))
-    # video_path = r'D:\CMZ\convert'
-    # video_save_path = r'D:\CMZ\dataset\video'
-    # audio_save_path = r'D:\CMZ\dataset\audio'
+    # video_path = r'convert'
+    # video_save_path = r'dataset\video'
+    # audio_save_path = r'dataset\audio'
     # for item in tqdm(meteorological_paths):
     #     file_utils.generate_dataset(item,metadata_path,video_path,video_save_path,audio_save_path)
 
@@ -607,9 +607,11 @@ if __name__ == '__main__':
     # for file in tqdm(files):
     #     audio_utils.audio_split(file, 4, 4, save_path)
 
-
-    # acoustic feature extraction
-
+    '''
+    # Acoustic feature extraction
+    # This part is applied to generate the dataset (data.npy, label.csv) in the baseline training code
+    # The input is the filefolder of data (train/test), it will produce the .npy file for feature data, and the .csv for label data.
+    # Notice that if you want to generate different acoustic features (such as MFCC, Mel, STFT), you need to go to this method and apply different methods of feature extraction
     # X_mfcc,Y_mfcc = audio_utils.preprocessing_classification(audio_utils.dataset_path_train)
     # Y_mfcc.to_csv('train_label_nmfcc400.csv')
     # np.save("train_mfcc_nmfcc400", X_mfcc)
