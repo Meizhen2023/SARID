@@ -27,10 +27,10 @@ num_epochs = 100
 batch_size = 64
 learning_rate = 0.001
 
-train_features_path = r'D:\CMZ\dataset_new\features_labels\split_nocoveragge\without_background\train_stft.npy'
-train_labels_path = r'D:\CMZ\dataset_new\features_labels\split_nocoveragge\without_background\train_label_nmfcc400.csv'
-test_features_path = r'D:\CMZ\dataset_new\features_labels\split_nocoveragge\without_background\test_stft.npy'
-test_labels_path = r'D:\CMZ\dataset_new\features_labels\split_nocoveragge\without_background\test_label_mel.csv'
+train_features_path = f'{data features train}.npy'
+train_labels_path = f'{label training}.csv'
+test_features_path = f'{data features test}.npy'
+test_labels_path = f'{label test}.csv'
 train_dataset = USRADataset(train_labels_path, train_features_path)
 val_dataset = USRADataset(test_labels_path, test_features_path)
 train_loader = DataLoader(train_dataset, shuffle=True, batch_size=batch_size,
