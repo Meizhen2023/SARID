@@ -6,6 +6,7 @@ import torchvision.transforms as transforms
 from utils.dataloader import USRADataset,USRADataset_collate,USRADataset_CR,USRADataset_collate_CR
 from torch.utils.data import DataLoader
 from nets.baseline_training import get_lr_scheduler, set_optimizer_lr
+from nets.general_net import BaseCNN_Conv
 import torch.optim as optim
 import matplotlib.pyplot as plt
 import pandas as pd
