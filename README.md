@@ -27,7 +27,7 @@ The split file is available under 'split/' folder.
 | Transformer |       STFT       | 0.711 | 1.199 | 1.095 | 0.636 |
 
 
-This repository is designed to provide an open-source dataset for surveillance audio-based rainfall estimation, described in _《Towards Rainfall Intensity Estimation using Surveillance Audio: A Dataset and Baseline》_. This dataset is open-source under MIT license. More details about this dataset are available in our paper _《Towards Rainfall Intensity Estimation using Surveillance Audio: A Dataset and Baseline》_. If you are benefited from this paper, please cite our paper as follows:
+This repository is designed to provide an open-source dataset for surveillance audio-based rainfall estimation, described in _《Towards Rainfall Intensity Estimation using Surveillance Audio: A Dataset and Baseline》_. This dataset is open-source under MIT license. More details about this dataset are available in our paper _《Estimating rainfall intensity based on surveillance audio and deep-learning》_. If you are benefited from this paper, please cite our paper as follows:
 
 ```
 @{
