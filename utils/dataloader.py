@@ -28,16 +28,15 @@ class USRADataset(Dataset):
         self.num_rows = 40
         self.num_columns = 173
         self.num_channels = 1
-        self.geo = standardization(self.label[['TEMPORTURE','HUMIDITY','ATMOSPHERE PHERE','WIND SPEED']])
     def __len__(self):
         return self.length
 
     def __getitem__(self, index):
-
-        feature_item = self.feature[index].reshape(1,1025,173)
-
+        # pay attention, for the code "self.feature[index].reshape({dimension})", you need to matches the acoustic features dimension to model input dimension
+        # for example, if feature is MFCC, network is Transformer, you need to check the "n_model" and other setting of the Transformerencoder, to make sure that
+        # the MFCC feature array could be correctly send to model and do a forward calculation.
+        feature_item = self.feature[index].reshape({dimension})
         rainfall_intensity = self.label.iloc[index]['RAINFALL INTENSITY']
-        # geo_information = np.array(standardization(self.label.iloc[index][2:6])).astype(float)
         return feature_item,rainfall_intensity
 
 def USRADataset_collate(batch):
