@@ -43,7 +43,7 @@ This repository is designed to provide an open-source dataset for surveillance a
 
 ## Demo
 
-Demo code and several images are provided, after you obtain "model_epoch_best_R.ckpt" by downloading or training, the "dataprocessing.py" is used to process the audio data (including the acoustic feature extraction, tran/test splitting, etc., for example, if you want to generate a train/test dataset yourself, you can directly run the code of preprocessing function in data_processing.py,). The "baseline.py" includes the model structure and training process.
+Demo code and several images are provided, after you obtain "model_epoch_best_R.ckpt" by downloading or training, the "dataprocessing.py" is used to process the audio data (including the acoustic feature extraction, tran/test splitting, etc., for example, if you want to generate a train/test dataset yourself, you can directly run the code of preprocessing function in data_processing.py,). The "baseline.py" includes the model structure and training process (Due to the different features (MFCC, Mel, STFT) and different networks (CNN, LSTM, Transformer), you need to change some settings in the code, specifically the parameters of dimension to make sure that the model input's dimension matches the feature dimension, the detail setting could be seen in the code).
 
 ## Training instructions
 
