@@ -37,6 +37,10 @@ train_loader = DataLoader(train_dataset, shuffle=True, batch_size=batch_size,
  collate_fn=USRADataset_collate)
 test_loader = DataLoader(val_dataset, shuffle=False, batch_size=batch_size,
  collate_fn=USRADataset_collate)
+
+# For the data setting and model training:
+# Please notice that the current code is for the paper settings, but due to the different features dimensions and model structure,
+# you need to adjust the feature dimension to make sure that the code can be run correctly
 class CNN(nn.Module):
     def __init__(self):
         super(CNN, self).__init__()
