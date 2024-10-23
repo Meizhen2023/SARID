@@ -41,9 +41,15 @@ This repository is designed to provide an open-source dataset for surveillance a
 
 
 ## Demo
-1. Run the "Acoustic feature extraction" part in data_processing.py to generate the features (formatted in .npy) and labels (formatted in .csv).
-2. Run the baseline.py to train and test the model (see details below). 
-Demo code and several images are provided after you obtain "model_epoch_best_R.ckpt" by downloading or training the model yourself, the "dataprocessing.py" is used to process the audio data (including the acoustic feature extraction, train/test splitting, etc., for the feature preparation, you only need to run the "Acoustic feature extraction" part in data_processing.py). The "baseline.py" includes the model structure and training process (Due to the different features (MFCC, Mel, STFT) and different networks (CNN, LSTM, Transformer), you need to change some settings in the code, specifically the parameters of dimension to make sure that the model input's dimension matches the feature dimension, the detail setting could be seen in the code).
+1. Run the "Acoustic feature extraction" section in `data_processing.py` to generate the features (in .npy format) and labels (in .csv format).  
+2. Run `baseline.py` to train and test the model (details provided below).
+
+Once you've obtained the "model_epoch_best_R.ckpt" file—either by downloading it or training the model yourself—you can refer to the provided demo code and images.  
+The `data_processing.py` script is responsible for processing audio data, which includes tasks like acoustic feature extraction and splitting the data into training and testing sets.  
+For feature preparation, you only need to run the "Acoustic feature extraction" section in `data_processing.py`.  
+
+The `baseline.py` script contains the model architecture and handles the training process. Since different features (MFCC, Mel, STFT) and networks (CNN, LSTM, Transformer) are supported, you need to adjust certain settings in the code—specifically, the input dimension parameters. Ensure that the model's input dimensions match the feature dimensions. Details on these settings can be found in the code.
+
 
 ## Training instructions
 
