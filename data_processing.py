@@ -551,7 +551,7 @@ if __name__ == '__main__':
 
     '''
     # surveillance data ----->  normal video data
-    '''
+    
     # base_path = r'D:\CMZ\数据'
     # metadata_path = r'D:\CMZ\数据\file_name_time.csv'
     # metadata = pd.read_csv(metadata_path)
@@ -571,17 +571,6 @@ if __name__ == '__main__':
     #     save_path = os.path.join(convert_path,file_name)
     #     file_utils.convert_from_surveillance_camera(file_path,save_path,(hour,minute,seconds))
     '''
-    # generate dataset
-    '''
-    # meteorological_path = r'convert_csv'
-    # metadata_path = r'file_name_time.csv'
-    # meteorological_paths = glob.glob(os.path.join(meteorological_path,'*.csv'))
-    # video_path = r'convert'
-    # video_save_path = r'dataset\video'
-    # audio_save_path = r'dataset\audio'
-    # for item in tqdm(meteorological_paths):
-    #     file_utils.generate_dataset(item,metadata_path,video_path,video_save_path,audio_save_path)
-
 
     '''
     # static_utils = utils_static()
@@ -595,7 +584,7 @@ if __name__ == '__main__':
     # file_utils.spliy_train_test(file_path,train_path,test_path,'mp3')
 
 
-    # 分割音频，设置分割长度，重叠度等
+    # Split audio, set split length, overlap, etc.
     # data_path = r'D:\CMZ\dataset_new\audio_without_background'
     # save_path = r'D:\CMZ\dataset_new\audio_without_background_split_nocoverage'
     # files = glob.glob(os.path.join(data_path,'*.mp3'))
@@ -608,6 +597,7 @@ if __name__ == '__main__':
     #     audio_utils.audio_split(file, 4, 4, save_path)
 
     '''
+    
     # Acoustic feature extraction
     # This part is applied to generate the dataset (data.npy, label.csv) in the baseline training code
     # The input is the filefolder of data (train/test), it will produce the .npy file for feature data, and the .csv for label data.
