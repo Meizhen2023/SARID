@@ -602,9 +602,9 @@ if __name__ == '__main__':
     # This part is applied to generate the dataset (data.npy, label.csv) in the baseline training code
     # The input is the filefolder of data (train/test), it will produce the .npy file for feature data, and the .csv for label data.
     # Notice that if you want to generate different acoustic features (such as MFCC, Mel, STFT), you need to go to this method and apply different methods of feature extraction
-    # X_mfcc,Y_mfcc = audio_utils.preprocessing_classification(audio_utils.dataset_path_train)
-    # Y_mfcc.to_csv('train_label_nmfcc400.csv')
-    # np.save("train_mfcc_nmfcc400", X_mfcc)
+    X_mfcc,Y_mfcc = audio_utils.preprocessing_classification(audio_utils.dataset_path_train)
+    Y_mfcc.to_csv('train_label_nmfcc400.csv')
+    np.save("train_mfcc_nmfcc400", X_mfcc)
     #
   
 
